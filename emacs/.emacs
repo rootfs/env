@@ -47,7 +47,7 @@
   ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
   ;; Your init file should contain only one such instance.
  )
-(global-set-key [(control m)] 'menu-bar-open)
+(global-set-key [(meta m)] 'menu-bar-open)
 (global-set-key [(control o)] 'find-file)              ; use Ctrl-o to open a (new) file
 (global-set-key [(control n)] 'find-file-other-frame)  ; open a file in a new window with Ctrl-n
 (global-set-key [(control s)] 'save-buffer)            ; save with Ctrl-s
