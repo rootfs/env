@@ -42,7 +42,10 @@
  '(text-mode-hook (quote (turn-on-auto-fill text-mode-hook-identify)))
  '(transient-mark-mode t)
  '(uniquify-buffer-name-style (quote forward) nil (uniquify)))
-
+(cua-mode t)
+    (setq cua-auto-tabify-rectangles nil) ;; Don't tabify after rectangle commands
+    (transient-mark-mode 1)               ;; No region when it is not highlighted
+    (setq cua-keep-region-after-copy t) 
 (custom-set-faces
   ;; custom-set-faces was added by Custom -- don't edit or cut/paste it!
   ;; Your init file should contain only one such instance.
