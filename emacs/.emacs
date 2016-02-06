@@ -214,4 +214,7 @@
     (let ((shell-name (read-string "shell name: " nil)))
     (shell (concat "*" shell-name "*"))))
 
+(add-to-list 'load-path "~/emacs")
+(require 'go-mode-autoloads)
+(add-hook 'before-save-hook #'gofmt-before-save)
 
