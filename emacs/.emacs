@@ -217,4 +217,5 @@
 (add-to-list 'load-path "~/emacs")
 (require 'go-mode-autoloads)
 (add-hook 'before-save-hook #'gofmt-before-save)
-
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
